@@ -80,9 +80,7 @@ spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-local CFrameEnd = game:GetService("Workspace").Enemies[MON].HumanoidRootPart.CFrame * CFrame.new(0,-8,5) --ใส่CFrame
-local Time = 5 --ใส่เวลาที่จะไปถึง
-local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd}) tween:Play()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON].HumanoidRootPart.CFrame * CFrame.new(0,-8,5)
         end
     end)
    end)
@@ -128,9 +126,7 @@ spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-local CFrameEnd = game:GetService("Workspace").Enemies[MON2].HumanoidRootPart.CFrame * CFrame.new(0,-8,5) --ใส่CFrame
-local Time = 5 --ใส่เวลาที่จะไปถึง
-local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd}) tween:Play()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON2].HumanoidRootPart.CFrame * CFrame.new(0,-8,5)
         end
     end)
    end)
@@ -176,9 +172,7 @@ spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-local CFrameEnd = game:GetService("Workspace").Enemies[MON3].HumanoidRootPart.CFrame * CFrame.new(0,-8,5) --ใส่CFrame
-local Time = 5 --ใส่เวลาที่จะไปถึง
-local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd}) tween:Play()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON3].HumanoidRootPart.CFrame * CFrame.new(0,-8,5)
         end
     end)
    end)
@@ -224,9 +218,7 @@ end)
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-local CFrameEnd = game:GetService("Workspace").Enemies[MON4].HumanoidRootPart.CFrame * CFrame.new(0,-8,5) --ใส่CFrame
-local Time = 5 --ใส่เวลาที่จะไปถึง
-local tween = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd}) tween:Play()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON4].HumanoidRootPart.CFrame * CFrame.new(0,-8,5)
         end
     end)
    end)
@@ -361,4 +353,3 @@ end
  
 -- load
 venyx:SelectPage(venyx.pages[1], true)
-
