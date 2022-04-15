@@ -63,7 +63,7 @@ spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON].HumanoidRootPart.CFrame * CFrame.new(0,15,15)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON].HumanoidRootPart.CFrame * CFrame.new(0,-5,5)
         end
     end)
    end)
@@ -109,7 +109,7 @@ spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON2].HumanoidRootPart.CFrame * CFrame.new(0,15,15)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON2].HumanoidRootPart.CFrame * CFrame.new(0,-5,5)
         end
     end)
    end)
@@ -155,7 +155,7 @@ spawn(function()
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON3].HumanoidRootPart.CFrame * CFrame.new(0,15,15)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON3].HumanoidRootPart.CFrame * CFrame.new(0,-5,5)
         end
     end)
    end)
@@ -201,7 +201,7 @@ end)
    game:GetService("RunService").RenderStepped:Connect(function()
     pcall(function()
         if _G.Fa then
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON4].HumanoidRootPart.CFrame * CFrame.new(0,15,15)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON4].HumanoidRootPart.CFrame * CFrame.new(0,-5,5)
         end
     end)
    end)
