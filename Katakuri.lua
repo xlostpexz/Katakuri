@@ -6,6 +6,8 @@ MON3 = "Baking Staff [Lv. 2250]"
 
 MON4 = "Head Baker [Lv. 2275]"
 
+MON5 = "Cake Prince [Lv. 2300]"
+
 local Weaponlist = {}
 local Weapon = nil
 
@@ -26,6 +28,10 @@ local colors = theme:addSection("Colors")
 
 farm:addToggle("Auto Farm", _G.Fa, function(value)
 _G.Fa = value
+end)
+
+farm:addToggle("Auto Katakuri", _G.Fa3, function(value)
+_G.Fa3 = value
 end)
 
 farm:addToggle("Auto Attack", _G.Fa2, function(value)
@@ -56,6 +62,16 @@ print("Activated Keybind")
 venyx:toggle()
 end, function()
 print("Changed Keybind")
+end)
+
+spawn(function()
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.Fa then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Enemies[MON5].HumanoidRootPart.CFrame * CFrame.new(0,-8,5)
+        end
+    end)
+   end)
 end)
 
 spawn(function()
@@ -289,6 +305,21 @@ end
 end)
 end)
 end)
+
+	spawn(function()
+   game:GetService("RunService").RenderStepped:Connect(function()
+    pcall(function()
+        if _G.Fa3 then
+	local CombatFrameworkROld = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework) 
+	local CombatFrameworkR = getupvalues(CombatFrameworkROld)[2]
+	local CameraShakerR = require(game.ReplicatedStorage.Util.CameraShaker)
+	CameraShakerR:Stop()
+				CombatFrameworkR.activeController.hitboxMagnitude = 55
+end
+end)
+end)
+end)
+
 
 
 spawn(function()
