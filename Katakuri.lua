@@ -14,7 +14,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 end
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local venyx = library.new("Winnable Hub | Katakuri BF", 5013109572)
+local venyx = library.new("Winnable Hub | Katakuri BF | V.1.0.0", 5013109572)
  
  
  
