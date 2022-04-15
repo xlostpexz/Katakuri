@@ -14,7 +14,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 end
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local venyx = library.new("Winnable Hub | Test BF", 5013109572)
+local venyx = library.new("Winnable Hub | Katakuri BF", 5013109572)
  
  
  
@@ -34,29 +34,6 @@ end)
 
 farm:addToggle("Auto Haki", _G.AUTOHAKI, function(value)
 _G.AUTOHAKI = value
-end)
-
-farm:addButton("Tween For Farm", function(value)
-checklevel()
-local TweenService = game:GetService("TweenService")
-local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(30, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
-{CFrame = POS}):Play()
-end)
-
-farm:addButton("Redeem All Code",function(value)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/xlostpexz/AutoCode/main/AllCode.lua', true))()
-end)
-
-farm:addButton("Quest", function(value)
-
-local args = {
-    [1] = "StartQuest",
-    [2] = "MagmaQuest",
-    [3] = 1
-}
-
-game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
-
 end)
 
 farm2:addDropdown("Select Weapon", Weaponlist, function(abcd)
